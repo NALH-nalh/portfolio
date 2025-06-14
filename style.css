@@ -1,0 +1,438 @@
+#header-top{
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    background:linear-gradient(to bottom ,black,rgb(59, 59, 59));
+}
+
+#header-top p{
+    color : rgb(190, 189, 189);
+    font-weight :bold;
+    text-decoration : none;
+    font-size : 30px;
+    margin : 0px 30px;
+}
+
+#header-top img{
+    width : 100px;
+    height : 40px;
+}
+
+#header-tops {
+    display : flex;
+    list-style : none;
+    gap : 30px;
+    color : white;
+    font-weight : bold;
+    margin-right : 50px;   
+      
+}
+
+#header-tops a{
+    color : white;
+    text-decoration : none;
+    transition : color 0.7s ease;
+}
+
+#header-tops a:hover{
+    color : red;
+    cursor :pointer;
+}
+
+
+#images{
+    display : flex;
+    justify-content : center;
+}
+
+#slider{
+    display : flex;
+    justify-content : center;
+    align-items: center;
+    position : relative;
+}
+
+#slider button {
+    width : 20px;
+    height : 20px;
+    background : transparent;
+    border : none;
+    font-size : 50px;
+    z-index : 9999;
+}
+
+#prev{
+    position : absolute;
+    left : -6%;
+    cursor : pointer;
+    transition : color 0.3s ease;
+}
+
+#prev:hover{
+    color : red;
+}
+
+#next:hover{
+    color : red;
+}
+
+#next{
+    position : absolute;
+    right : -2%;
+    cursor : pointer;
+    transition : color 0.8s ease;
+}
+
+
+
+#images img{
+    width:1100px;
+    height:610px;
+}
+
+#profile{
+    background :linear-gradient(to bottom ,yellow,rgb(198, 198, 1));
+    height : 600px;
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    padding : 40px;
+    
+}
+
+#profile-image-skill{
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+}
+
+#profile-skill{
+    font-size : 20px;
+    background-color : rgb(255, 255, 255);
+    padding : 10px;
+}
+
+
+#profile-image{
+    width : 600px;
+    height : 400px;
+}
+
+#profile-detail{
+    list-style : none;
+    padding : 0px;
+    position : relative;
+}
+
+#profile-title{
+    font-size : 15px;
+    position : absolute;
+    top : -4%;
+    left : 10%;
+
+}
+
+#profile-title2{
+    font-size : 25px;
+    padding-left : 20px;
+}
+
+#profile-slogan{
+    text-decoration : underline;
+}
+
+#profile-sentence{
+    margin-bottom : 20px;
+    line-height : 2;
+}
+
+.pareer-history{
+    list-style : none;
+    padding-bottom : 3px;
+}
+
+#Programming{
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    background :linear-gradient(to bottom ,rgb(71, 1, 249),rgb(50, 1, 174));
+    height : 600px;
+    padding : 40px;
+}
+
+#Programming-image-skill{
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+}
+
+#Programming-skill{
+    font-size : 20px;
+    background-color : rgba(255, 255, 255);
+    padding : 10px;
+}
+
+#Programming-image{
+    width : 600px;
+    height : 400px;
+}
+
+#Programming-slogan{
+    text-decoration:underline;
+}
+
+#Programming-detail{
+    color : rgb(235, 233, 233);
+    list-style : none;
+    padding : 0px;
+    position : relative;
+}
+
+#Programming-title{
+    font-size : 15px;
+    position : absolute;
+    top : 5%;
+    left : 25%;
+
+}
+
+#Programming-title2{
+    font-size : 25px;
+    padding-left : 20px;
+}
+
+#Programming-sentence{
+    margin-bottom : 20px;
+    line-height : 2;
+}
+
+#Writing{
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    padding : 40px;
+    background :linear-gradient(to bottom ,rgb(249, 1, 117),rgb(186, 1, 87));
+    height : 600px;
+}
+
+#Writing-image-skill{
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+}
+
+#Writing-skill{
+    font-size : 20px;
+    background-color : rgb(255, 255, 255);
+    padding : 10px;
+}
+
+#Writing-image{
+    width : 600px;
+    height : 400px;
+}
+
+#Writing-detail{
+    list-style : none;
+    padding : 0px;
+    position : relative;
+}
+
+#Writing-title{
+    font-size : 15px;
+    position : absolute;
+    top : 5%;
+    left : 12%;
+}
+
+#Writing-title2{
+    font-size : 25px;
+    padding-left : 20px;
+}
+
+#Writing-slogan{
+    text-decoration : underline;
+}
+
+#Writing-sentence{
+    margin-bottom : 20px;
+    line-height : 2;
+}
+
+
+#video-edting{
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    background :linear-gradient(to bottom ,rgb(2, 132, 23),rgb(1, 94, 16));
+    height : 600px;
+    padding : 40px;
+}
+
+#video-edting-image-skill{
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+}
+
+#video-edting-skill{
+    font-size : 20px;
+    background-color : rgb(255, 255, 255);
+    padding : 10px;
+}
+
+#video-edting-image{
+    width : 600px;
+    height : 400px;
+}
+
+#video-edting-slogan{
+    text-decoration:underline;
+    margin-top : 0px;
+}
+
+#video-edting-detail{
+    color : rgb(235, 233, 233);
+    list-style : none;
+    padding : 0px;
+    position : relative;
+    display : flex;
+    flex-direction : column;
+    align-items : flex-start;
+    width : 100%;
+    padding-left : 80px;
+}
+
+#video-edting-title{
+    font-size : 15px;
+    position : absolute;
+    top : 6%;
+    left : 40%;
+
+}
+
+#video-edting-title2{
+    font-size : 25px;
+    padding-left : 20px;
+}
+
+#video-edting-sentence{
+    margin-bottom : 20px;
+    line-height : 2;
+}
+
+#illustraiton{
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    padding : 40px;
+    background :linear-gradient(to bottom ,rgb(245, 147, 1),rgb(202, 122, 1));
+    height : 600px;
+}
+
+#illustraiton-image-skill{
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+}
+
+#illustraiton-skill{
+    font-size : 20px;
+    background-color : rgb(255, 255, 255);
+    padding : 10px;
+}
+
+#illustraiton-image{
+    width : 600px;
+    height : 400px;
+}
+
+#illustraiton-detail{
+    list-style : none;
+    padding : 0px;
+    position : relative;
+}
+
+#illustraiton-title{
+    font-size : 15px;
+    position : absolute;
+    top : 5%;
+    left : 22%;
+}
+
+#illustraiton-title2{
+    font-size : 25px;
+    padding-left : 20px;
+}
+
+#illustraiton-slogan{
+    text-decoration : underline;
+}
+
+#illustraiton-sentence{
+    margin-bottom : 20px;
+    line-height : 2;
+}
+
+
+
+#image-editing{
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    background :linear-gradient(to bottom ,rgb(3, 150, 255),rgb(1, 104, 177));
+    height : 600px;
+    padding : 40px;
+}
+
+#image-editing-image-skill{
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+}
+
+#image-editing-skill{
+    font-size : 20px;
+    background-color : rgb(255, 255, 255);
+    padding : 10px;
+}
+
+#image-editing-image{
+    width : 600px;
+    height : 400px;
+}
+
+#image-editing-slogan{
+    text-decoration:underline;
+    margin-top : 0px;
+}
+
+#image-editing-detail{
+    color : rgb(235, 233, 233);
+    list-style : none;
+    padding : 0px;
+    position : relative;
+    display : flex;
+    flex-direction : column;
+    align-items : flex-start;
+    width : 100%;
+    padding-left : 80px;
+}
+
+#image-editing-title{
+    font-size : 15px;
+    position : absolute;
+    top : 6%;
+    left : 40%;
+
+}
+
+#image-editing-title2{
+    font-size : 25px;
+    padding-left : 20px;
+}
+
+#image-editing-sentence{
+    margin-bottom : 20px;
+    line-height : 2;
+}
