@@ -30,8 +30,26 @@
 
 #header-tops a{
     color : white;
+    position : relative;
+    display : inline-block;
     text-decoration : none;
     transition : color 0.7s ease;
+}
+
+#header-tops a::after{
+    content : "";
+    position : absolute;
+    left:50%;
+    bottom : 0;
+    width : 0;
+    height : 2px;
+    background-color : red;
+    transition : all 0.3s ease;
+    transform : translateX(-50%);
+}
+
+#header-tops a:hover::after{
+    width : 100%;
 }
 
 #header-tops a:hover{
@@ -68,6 +86,8 @@
     transition : color 0.3s ease;
 }
 
+
+
 #prev:hover{
     color : red;
 }
@@ -97,25 +117,42 @@
     justify-content : space-between;
     align-items : center;
     padding : 40px;
-    
 }
+
 
 #profile-image-skill{
     display : flex;
     flex-direction : column;
     align-items : center;
 }
-
+/* ++++++++++++++++++++++++++++++++++++++++++++++++ */
 #profile-skill{
     font-size : 20px;
     background-color : rgb(255, 255, 255);
     padding : 10px;
+    opacity : 0;
+    transform : translateY(-50px);
+    transition : opacity 0.5s ease , transform 0.5s ease;
+}
+
+#profile-skill.invisible{
+    opacity : 1;
+    transform : translateY(0);
 }
 
 
+/* ++++++++++++++++++++++++++++++++++++++++++++ */
 #profile-image{
     width : 600px;
     height : 400px;
+    opacity : 0;
+    transform : translateY(20px);
+    transition :opacity 0.5s ease ,translateY 0.5s ease;
+}
+
+#profile-image.visible{
+    opacity : 1;
+    transform:translateY(0);
 }
 
 #profile-detail{
@@ -170,6 +207,14 @@
     font-size : 20px;
     background-color : rgba(255, 255, 255);
     padding : 10px;
+    opacity : 0;
+    transform : translateY(-50px);
+    transition : opacity 0.5s ease , transform 0.5s ease;
+}
+
+#Programming-skill.invisible{
+    opacity : 1;
+    transform : translateY(0);
 }
 
 #Programming-image{
@@ -225,6 +270,14 @@
     font-size : 20px;
     background-color : rgb(255, 255, 255);
     padding : 10px;
+    opacity : 0;
+    transform : translateY(-50px);
+    transition : opacity 0.5s ease , transform 0.5s ease;
+}
+
+#Writing-skill.invisible{
+    opacity : 1;
+    transform : translateY(0);
 }
 
 #Writing-image{
@@ -279,6 +332,14 @@
     font-size : 20px;
     background-color : rgb(255, 255, 255);
     padding : 10px;
+    opacity : 0;
+    transform : translateY(-50px);
+    transition : opacity 0.5s ease , transform 0.5s ease;
+}
+
+#video-edting-skill.invisible{
+    opacity : 1;
+    transform : translateY(0);
 }
 
 #video-edting-image{
@@ -340,6 +401,14 @@
     font-size : 20px;
     background-color : rgb(255, 255, 255);
     padding : 10px;
+    opacity : 0;
+    transform : translateY(-50px);
+    transition : opacity 0.5s ease , transform 0.5s ease;
+}
+
+#illustraiton-skill.invisible{
+    opacity : 1;
+    transform : translateY(0);
 }
 
 #illustraiton-image{
@@ -395,6 +464,14 @@
     font-size : 20px;
     background-color : rgb(255, 255, 255);
     padding : 10px;
+    opacity : 0;
+    transform : translateY(-50px);
+    transition : opacity 0.5s ease , transform 0.5s ease;
+}
+
+#image-editing-skill.invisible{
+    opacity : 1;
+    transform : translateY(0);
 }
 
 #image-editing-image{
@@ -435,4 +512,224 @@
 #image-editing-sentence{
     margin-bottom : 20px;
     line-height : 2;
+}
+
+#fixedIcon{
+    position : fixed;
+    bottom : 20px;
+    right : 20px;
+    width : 150px;
+    height : 140px;
+    border-radius : 5%;
+    background-color : rgba(255, 255, 255, 0.5);
+    border : none;
+    cursor : pointer;
+    font-size : 24px;
+    box-shadow : 0px 2px 6px rgba(0,0,0,0.3);
+    z-index : 1;
+    display : flex;
+    flex-wrap : wrap;
+    justify-content : center;
+    align-items : center;
+    gap : 20px;
+    padding : 10px; 
+}
+
+#fixedIcon:hover{
+    background-color: #cccbcbaf;
+}
+
+#youtubeButton {
+  width: 50px;
+  height: 50px;
+  background-color:rgba(255, 255, 255, 0.3);
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 38px;
+  text-decoration: none;
+  z-index: 2;
+  box-shadow : 2px 2px 5px black;
+
+}
+
+#youtubeButton:hover{
+    width: 58px;
+    height: 58px;
+}
+
+#tiktokButton{
+  width: 50px;
+  height: 50px;
+  background-color:rgba(255, 255, 255, 0.3);
+  color:black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 38px;
+  text-decoration: none;
+  z-index: 2;
+  box-shadow : 2px 2px 5px;
+}
+
+#tiktokButton:hover{
+    width: 58px;
+    height: 58px;
+}
+
+#instagramButton{
+  width: 50px;
+  height: 50px;
+  background-color:rgba(255, 255, 255, 0.3);
+  background : linear-gradient(to right, rgb(255, 1, 103),rgb(255, 174, 0),rgb(242, 255, 0));
+  -webkit-background-clip : text;
+  -webkit-text-fill-color:transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 38px;
+  text-decoration: none;
+  z-index: 2;
+  box-shadow : 2px 2px 5px black;
+}
+
+#instagramButton:hover{
+    width: 58px;
+    height: 58px;
+}
+
+#wordpress{
+ width: 50px;
+  height: 50px;
+  background-color:rgba(255, 255, 255, 0.3);
+  color:blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 38px;
+  text-decoration: none;
+  z-index: 2;
+  box-shadow : 2px 2px 5px black;
+}  
+
+#wordpress:hover{
+    width: 58px;
+    height: 58px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Programming-image{
+    width : 600px;
+    height : 400px;
+    opacity : 0;
+    transform : translateY(20px);
+    transition :opacity 0.5s ease ,translateY 0.5s ease;
+}
+
+
+
+#Programming-image.visible{
+    opacity : 1;
+    transform:translateY(0);
+}
+
+#Writing-image{
+    width : 600px;
+    height : 400px;
+    opacity : 0;
+    transform : translateY(20px);
+    transition :opacity 0.5s ease ,translateY 0.5s ease;
+}
+
+#Writing-image.visible{
+    opacity : 1;
+    transform:translateY(0);
+}
+
+#video-edting-image{
+    width : 600px;
+    height : 400px;
+    opacity : 0;
+    transform : translateY(20px);
+    transition :opacity 0.5s ease ,translateY 0.5s ease;
+}
+
+#video-edting-image.visible{
+    opacity : 1;
+    transform:translateY(0);
+}
+
+#illustraiton-image{
+    width : 600px;
+    height : 400px;
+    opacity : 0;
+    transform : translateY(20px);
+    transition :opacity 0.5s ease ,translateY 0.5s ease;
+}
+
+#illustraiton-image.visible{
+    opacity : 1;
+    transform:translateY(0);
+}
+
+#image-editing-image{
+    width : 600px;
+    height : 400px;
+    opacity : 0;
+    transform : translateY(20px);
+    transition :opacity 0.5s ease ,translateY 0.5s ease;
+}
+
+#image-editing-image.visible{
+    opacity : 1;
+    transform:translateY(0);
+}
+
+
+
+
+.fade-anim{
+    animation:slideZoom 0.8s ease forwards;
+}
+
+@keyframes slideZoom{
+    0%{
+        transform : scale(0.8) translateX(100%);
+        opacity : 0;
+    }
+    50%{
+        transform : scale(0.8) translateX(0);
+        opacity : 1;
+    }
+    100%{
+        transform : scale(1) translateX(0);
+    }
+}
+
+
+
+#dot{
+    width : 10px;
+    height : 10px;
+    position : absolute;
+    top : 90%;
+    left : 50%;
+    background-color : red;
+    box-shadow : 2,2,2,black;
+    z-index:10000;
 }
