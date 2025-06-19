@@ -618,21 +618,6 @@
     height: 58px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #Programming-image{
     width : 600px;
     height : 400px;
@@ -721,15 +706,26 @@
     }
 }
 
+#dott{
+    display : flex;
+    position : absolute;
+    top:90%;
+    left : 43%;
+    z-index:10000;
+    cursor : pointer;
+}
 
-
-#dot{
+.indicator{
+    user-select : none ;
     width : 10px;
     height : 10px;
-    position : absolute;
-    top : 90%;
-    left : 50%;
-    background-color : red;
+    margin : 10px;
+    background-color : gray;
+    border : 2px solid white;
     box-shadow : 2,2,2,black;
     z-index:10000;
+}
+
+.activer{
+    background-color : red;
 }

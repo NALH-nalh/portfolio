@@ -100,3 +100,38 @@ Writingskill.forEach(le => observer2.observe(le));
 videoedtingskill.forEach(le => observer2.observe(le));
 illustraitonskill.forEach(le => observer2.observe(le));
 imageeditingskill.forEach(le => observer2.observe(le));
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+const dott = document.getElementById("dott");
+
+sliderimages.forEach((_,index)=>{
+    const dot = document.createElement("div");
+    dot.classList.add("indicator");
+    if(index === currentindex){
+    dot.classList.add("activer");
+    }
+    dot.addEventListener("click",()=>{
+    currentindex = index;
+    updateslider();
+    });
+    dott.appendChild(dot);
+});
+
+function updateslider(){
+    sliderimage.src = sliderimages[currentindex];
+    sliderimage.alt = sliderimages[currentindex];
+    document.querySelectorAll(".indicator").forEach((dot,index)=>{
+        dot.classList.toggle("activer",index === currentindex);
+    });
+};
+
+prev.addEventListener("click",()=>{
+    currentindex = (currentindex-1+sliderimages.length)%sliderimages.length;
+    updateslider();
+});
+
+next.addEventListener("click",()=>{
+    currentindex = (currentindex+1)%sliderimages.length;
+    updateslider();
+    
+});
